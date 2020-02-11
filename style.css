@@ -115,6 +115,10 @@ h1, h2{
   color: white;
 }
 
+#add-book button:hover {
+  background: #6727a0;
+}
+
 #add-book:after{
   content: '';
   display: block;
