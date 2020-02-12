@@ -5,7 +5,6 @@
 
 
 ## Tehnologies
-> The calc is created with:
 
 * JavaScript 
 * CSS
