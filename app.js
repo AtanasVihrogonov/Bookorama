@@ -1,3 +1,11 @@
+'use strict';
+/*!
+ *  https://github.com/AtanasVihrogonov/Bookorama
+ *
+ * Copyright © 2013-2017, Atanas Vihrogonov.
+ * Released under the MIT License.
+ */
+
 const list = document.querySelector('#book-list ul');
 // delete books
 list.addEventListener('click', function(e){
@@ -11,12 +19,16 @@ list.addEventListener('click', function(e){
 const addForm = document.forms['add-book'];
 addForm.addEventListener('submit', function(e){
   e.preventDefault();
-  const value = addForm.querySelector('input[type="text"]').value;
+  const value = addForm.querySelector('input[type="text"]').value.trim();
   
   // create elements
   const li = document.createElement('li');
   const bookName = document.createElement('span');
   const deleteBtn = document.createElement('span');
+
+  if(!value.length){
+    return  // set addForm state for no content
+  }
 
   // add content
   deleteBtn.textContent = 'delete';
@@ -30,6 +42,7 @@ addForm.addEventListener('submit', function(e){
   li.appendChild(bookName);
   li.appendChild(deleteBtn);
   list.appendChild(li);
+  addForm.reset();  // reset add a book form
 });
 
 // hide books
