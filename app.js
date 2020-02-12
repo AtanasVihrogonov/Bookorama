@@ -2,7 +2,7 @@
 /*!
  *  https://github.com/AtanasVihrogonov/Bookorama
  *
- * Copyright © 2013-2017, Atanas Vihrogonov.
+ * Copyright © 2020, Atanas Vihrogonov.
  * Released under the MIT License.
  */
 
