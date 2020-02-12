@@ -6,6 +6,7 @@
  * Released under the MIT License.
  */
 
+
 const list = document.querySelector('#book-list ul');
 // delete books
 list.addEventListener('click', function(e){
@@ -92,6 +93,15 @@ tabs.addEventListener('click', function(e){
     });
   }
 });
+
+/*
+* If <script src="app.js"></script> is loading on the top, 
+* attach events to the particular element in the Dom.
+* 
+* document.addEventListener('DOMContentLoaded', finction(){
+*   "grab & place js code"
+* });
+*/ 
 
 
 
